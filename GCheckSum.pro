@@ -12,8 +12,6 @@ TARGET = gchecksum
 
 CONFIG += release
 
-VERSION = 0.1
-
 TEMPLATE = app
 
 SOURCES += src/main.cpp\
@@ -33,5 +31,3 @@ OBJECTS_DIR = build/obj/
 MOC_DIR = build/moc/
 RCC_DIR = build/rcc/
 UI_DIR = build/uic
-
-DISTFILES = AUTHORS COPYING CHANGELOG

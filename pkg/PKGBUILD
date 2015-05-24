@@ -11,25 +11,25 @@ groups=('qt' 'qt5')
 makedepends=('qt5-base')
 depends=('qt5-base')
 install='gchecksum.install'
-source=('')
-md5sums=() #generate with 'makepkg -g'
+source=("https://github.com/gagiD/GCheckSum/blob/master/pkg/${pkgname}-${pkgver}.tar.gz")
+md5sums=('e6b5cfc32b148f9ffe63251d7f073431')
 
 prepare() {
-	cd $pkgname-$pkgver
+	cd $srcdir
 	qmake-qt5 PREFIX=/usr
 }
 
 build() {
-	cd $pkgname-$pkgver
+	cd $srcdir
 	make
 }
 
 check() {
-	cd $pkgname-$pkgver
+	cd $srcdir
 	make -k check
 }
 
 package() {
-	cd $pkgname-$pkgver
+	cd $srcdir
 	make INSTALL_ROOT="${pkgdir}" install
 }
