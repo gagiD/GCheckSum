@@ -1,0 +1,35 @@
+# Maintainer: gagiD Gagulić Eldin <gagid@openmailbox.com>
+
+packager=gagiD
+pkgname=gchecksum
+pkgver=0.1
+pkgrel=1
+arch=('i686')
+pkgdesc="GUI frontend for system.util sums. C++ && Qt framework."
+license=('GPL')
+groups=('qt' 'qt5')
+makedepends=('qt5-base')
+depends=('qt5-base')
+install='gchecksum.install'
+source=('')
+md5sums=() #generate with 'makepkg -g'
+
+prepare() {
+	cd $pkgname-$pkgver
+	qmake-qt5 PREFIX=/usr
+}
+
+build() {
+	cd $pkgname-$pkgver
+	make
+}
+
+check() {
+	cd $pkgname-$pkgver
+	make -k check
+}
+
+package() {
+	cd $pkgname-$pkgver
+	make INSTALL_ROOT="${pkgdir}" install
+}
