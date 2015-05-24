@@ -1,4 +1,4 @@
-# Maintainer: gagiD Gagulić Eldin <gagid@openmailbox.com>
+# Maintainer: Gagulić Eldin <gagid@openmailbox.com>
 
 packager=gagiD
 pkgname=gchecksum
@@ -12,7 +12,7 @@ makedepends=('qt5-base')
 depends=('qt5-base')
 install='gchecksum.install'
 source=("https://github.com/gagiD/GCheckSum/blob/master/pkg/${pkgname}-${pkgver}.tar.gz")
-md5sums=('e6b5cfc32b148f9ffe63251d7f073431')
+md5sums=(SKIP)
 
 prepare() {
 	cd $srcdir
