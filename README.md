@@ -14,6 +14,7 @@ qmake-qt5
 make
 ```
 Executable will be at build/target.
+Ofcourse you have to install `qt5-base` package if you doo't have it already.
 
 
 
