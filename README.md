@@ -9,7 +9,7 @@ A very simple GUI where you can select file and calculate sums or compare sums.
 ### Install
 Currently there is only 32bit package for Arch. But you can build executable by yourself.
 Executing following commands will make executable:
-```bash
+```sh
 qmake-qt5
 make
 ```
