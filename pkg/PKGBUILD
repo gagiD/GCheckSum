@@ -14,21 +14,21 @@ source=("https://github.com/gagiD/GCheckSum/blob/master/pkg/${pkgname}-${pkgver}
 md5sums=('SKIP')
 
 prepare() {
-	cd "$srcdir"
+	cd "$srcdir/$pkgname-$pkgver"
 	qmake-qt5 PREFIX=/usr
 }
 
 build() {
-	cd "$srcdir"
+	cd "$srcdir/$pkgname-$pkgver"
 	make
 }
 
 check() {
-	cd "$srcdir"
+	cd "$srcdir/$pkgname-$pkgver"
 	make -k check
 }
 
 package() {
-	cd "$srcdir"
+	cd "$srcdir/$pkgname-$pkgver"
 	make INSTALL_ROOT="${pkgdir}" install
 }
