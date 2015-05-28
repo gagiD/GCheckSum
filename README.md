@@ -24,7 +24,12 @@ A very simple GUI where you can select file and calculate sums or compare sums.
 For now there is packages only for Arch GNU/Linux. I will try to make .deb and .rpm packages. If you want to help please contact me.
 
 #### Arch && Arch-based GNU/Linux
-Download pkg package:
+Just run following command:
+```bash
+yaourt -S gchecksum
+```
+
+Or download pkg package:
 * [32bit](https://github.com/gagiD/GCheckSum/blob/master/pkg/gchecksum-0.1-1-i686.pkg.tar.xz?raw=true)
 * [64bit](https://github.com/gagiD/GCheckSum/blob/master/pkg/gchecksum-0.1-1-x86_64.pkg.tar.xz?raw=true)
 
@@ -35,8 +40,11 @@ You can download binaries:
 
 #### Build by yourself
 Download source and in source root run following commands:
-```sh
+```bash
 qmake-qt5
 make
 ```
 Executable will be at build/target.
+
+### Links
+* [AUR](https://aur.archlinux.org/packages/gchecksum/)
