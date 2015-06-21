@@ -19,6 +19,7 @@ A very simple GUI where you can select file and calculate sums or compare sums.
 ### Screenshots
 ![alt tag](screenshots/1.png)
 ![alt tag](screenshots/2.png)
+![alt tag](screenshots/3.png)
 
 ### Install
 For now there is packages only for Arch GNU/Linux. I will try to make .deb and .rpm packages. If you want to help please contact me.
